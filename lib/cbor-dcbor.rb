@@ -35,8 +35,8 @@ module CBOR
     module Float_Dcbor_CBOR
       def cbor_prepare_dcbor
         int = self.to_i
-        if int == self && int.to_cbor.size < self.to_cbor.size
-          int
+        if int == self && int.to_dcbor.size <= self.to_cbor.size
+          int.cbor_prepare_dcbor
         else
           self
         end

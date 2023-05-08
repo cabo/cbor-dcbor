@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "cbor-dcbor"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
   s.summary = "CBOR (Concise Binary Object Representation) \"dCBOR\" encoding"
   s.description = %q{cbor-dcbor implements "dCBOR" encoding for CBOR, RFC 8949}
   s.author = "Carsten Bormann"
